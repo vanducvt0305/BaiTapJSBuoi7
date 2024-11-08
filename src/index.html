@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <div class="mt-20 text-white">
+        <input
+          id="inputSo"
+          class="py-4 px-8 bg-purple-500 w-[400px] mx-auto block outline-none placeholder-white placeholder-opacity-70"
+          type="text"
+          placeholder="Hãy nhập vào 1 số:..."
+        />
+      </div>
+      <button
+        id="addSo"
+        class="py-4 px-8 bg-orange-600 text-center mx-auto block mt-6 text-white"
+      >
+        Thêm vào mảng
+      </button>
+      <div>Các số đã nhập:</div>
+      <div class="mt-2">
+        <div
+          id="arrShow"
+          class="py-4 px-8 bg-purple-500 mt-2 text-center min-w-[500px] text-white"
+        ></div>
+      </div>
+      <button
+        id="deleteArr"
+        class="py-4 px-8 bg-purple-500 text-white block mx-auto mt-2"
+      >
+        Xoá Mảng
+      </button>
+      <button
+        id="tinhTongSoDuong"
+        class="py-4 px-8 bg-purple-500 text-white block mt-2"
+      >
+        Tính tổng các số dương
+      </button>
+
+      <div
+        id="showNoiDungTong"
+        class="hidden py-4 px-8 bg-orange-600 mt-2 text-center min-w-[500px] text-white"
+      ></div>
+      <button
+        id="demCacSoDuong"
+        class="py-4 px-8 bg-purple-500 text-white block mt-2"
+      >
+        Đếm các số dương trong mảng
+      </button>
+
+      <div
+        id="showCacSoDuong"
+        class="hidden py-4 px-8 bg-orange-600 mt-2 text-center min-w-[500px] text-white"
+      ></div>
+      <!-- Tìm số nhỏ nhất trong mảng  -->
+      <button
+        id="timSoNhoNhat"
+        class="py-4 px-8 bg-purple-500 text-white block mt-2"
+      >
+        Tìm số nhỏ nhất trong mảng
+      </button>
+
+      <div
+        id="showSoNhoNhat"
+        class="hidden py-4 px-8 bg-orange-600 mt-2 text-center min-w-[500px] text-white"
+      ></div>
+      <!-- Tìm số dương nhỏ nhất trong mảng  -->
+      <button
+        id="timSoDuongNhoNhat"
+        class="py-4 px-8 bg-purple-500 text-white block mt-2"
+      >
+        Tìm số dương nhỏ nhất trong mảng
+      </button>
+
+      <div
+        id="showSoDuongNhoNhat"
+        class="hidden py-4 px-8 bg-orange-600 mt-2 text-center min-w-[500px] text-white"
+      ></div>
+      <button
+        id="timSoChanCuoiCung"
+        class="py-4 px-8 bg-purple-500 text-white block mt-2"
+      >
+        Tìm số chẵn cuối cùng trong mảng
+      </button>
+
+      <div
+        id="showSoChanCuoiCung"
+        class="hidden py-4 px-8 bg-orange-600 mt-2 text-center min-w-[500px] text-white"
+      ></div>
+
+      <br />
+      <br />
+      <hr />
+      <div class="flex mt-2">
+        <span class="py-4 px-8 bg-purple-500 text-white mt-2"
+          >Đổi chỗ vị trí thứ
+          <input
+            id="InputViTri1"
+            type="text"
+            class="bg-purple-500 outline-none p-2"
+        /></span>
+        <span class="py-4 px-8 bg-purple-500 text-white mt-2"
+          >cho vị trí thứ
+          <input
+            id="InputViTri2"
+            type="text"
+            class="bg-purple-500 outline-none p-2"
+        /></span>
+      </div>
+      <button
+        id="doiCho2ViTri"
+        class="py-4 px-8 bg-purple-500 text-white block mt-4"
+      >
+        Đổi chỗ 2 giá trị trong mảng theo vị trí
+      </button>
+
+      <div
+        id="showdoiCho2ViTri"
+        class="hidden py-4 px-8 bg-orange-600 mt-2 text-center min-w-[500px] text-white"
+      ></div>
+      <!-- Sắp xếp theo thứ tự tăng dần -->
+      <button
+        id="sapXepTangDan"
+        class="py-4 px-8 bg-purple-500 text-white block mt-2"
+      >
+        Sắp xếp mảng theo thứ tự tăng dần
+      </button>
+
+      <div
+        id="showsapXepTangDan"
+        class="hidden py-4 px-8 bg-orange-600 mt-2 text-center min-w-[500px] text-white"
+      ></div>
+      <!-- tìm số nguyên tố đầu tiên trong mảng  -->
+      <button
+        id="timSoNguyenTo"
+        class="py-4 px-8 bg-purple-500 text-white block mt-2"
+      >
+        Tìm số nguyên tố đầu tiên trong mảng
+      </button>
+
+      <div
+        id="showSoNguyenTo"
+        class="hidden py-4 px-8 bg-orange-600 mt-2 text-center min-w-[500px] text-white"
+      ></div>
+      <!-- Tìm số nguyên trong mảng -->
+      <button
+        id="timSoNguyen"
+        class="py-4 px-8 bg-purple-500 text-white block mt-2"
+      >
+        Tìm trong mảng có bao nhiêu số nguyên
+      </button>
+
+      <div
+        id="showSoNguyen"
+        class="hidden py-4 px-8 bg-orange-600 mt-2 text-center min-w-[500px] text-white"
+      ></div>
+      <!-- So sánh số lượng số âm và số dương -->
+      <button
+        id="soSanhSo"
+        class="py-4 px-8 bg-purple-500 text-white block mt-2"
+      >
+        So sánh số lượng số âm và số dương
+      </button>
+
+      <div
+        id="showSoSanhSo"
+        class="hidden py-4 px-8 bg-orange-600 mt-2 text-center min-w-[500px] text-white"
+      ></div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
