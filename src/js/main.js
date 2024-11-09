@@ -171,19 +171,18 @@ sapXepTangDan.onclick = () => {
   showsapXepTangDan.classList.remove("hidden");
   showsapXepTangDan.innerHTML = `Mảng mới sắp xếp tăng dần là [${arrSo}]`;
 };
+
 // Tìm số nguyên tố đầu tiên trong mảng
 let timSoNguyenTo = getElement("#timSoNguyenTo");
 let showSoNguyenTo = getElement("#showSoNguyenTo");
 function isPrime(num) {
-  if (num <= 1) return false; // Số nhỏ hơn hoặc bằng 1 không phải số nguyên tố
+  if (num <= 1) return false;
   for (let i = 2; i <= Math.sqrt(num); i++) {
-    // Kiểm tra đến căn bậc 2 của số
-    if (num % i === 0) return false; // Nếu chia hết cho bất kỳ số nào thì không phải số nguyên tố
+    if (num % i === 0) return false;
   }
-  return true; // Nếu không chia hết cho bất kỳ số nào, thì là số nguyên tố
+  return true;
 }
 
-// Hàm tìm số nguyên tố đầu tiên trong mảng
 function findFirstPrime(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (isPrime(arr[i])) {
